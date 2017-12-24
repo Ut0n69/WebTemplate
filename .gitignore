@@ -59,3 +59,15 @@ typings/
 
 # mac
 .DS_Store
+
+# gulp
+build
+*.node
+components
+coverage
+*.orig
+.idea
+sandbox
+test/out-fixtures/*
+test/watch-*.txt
+gulp.1
