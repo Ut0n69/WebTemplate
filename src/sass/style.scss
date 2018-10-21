@@ -1,29 +1,5 @@
-$bg: #eee;
+@import "./setup/reset";
+@import "./common/header";
 
-body {
-  margin: 0;
-  padding: 0;
-
-  background: $bg;
-
-  & h1 {
-    margin: 30px;
-  }
-}
-
-a:link { color: #000; }
-a:visited { color: #000; }
-a:hover { color: #000; }
-a:active { color: #000; }
-input[type="text"], 
-input[type="password"], 
-textarea, 
-select {
-    outline: none;
-}
-*:focus {
-  outline: none;
-}
-a {
-  text-decoration: none;
-}
+@import "./pages/index";
+@import "./pages/pageA";

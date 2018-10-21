@@ -1,21 +1,24 @@
-WebTemplate
-====
+# static-web-template
 
-A template for me.....
+This is a static web site template.
+
+## Usage
+
+```
+$ git clone https://github.com/Ut0n69/static-web-template.git
+$ cd static-web-template
+$ yarn
+$ yarn serve
+```
 
 ## What's in the template?
 
 - browser-sync
-- babel(ES2015)
+- browserify
+- babelify
+- babel(latest)
 - sass(SCSS)
+- postcss(autoprefixer, mqpacker, declaration-sorter)
 - ejs
 - gulp
-- express
-
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
-
-## Author
-
-[Ut0n69](https://github.com/Ut0n69)
+- eslint(airbnb)

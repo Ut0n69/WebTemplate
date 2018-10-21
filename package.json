@@ -1,35 +1,43 @@
 {
-  "name": "sass",
+  "name": "static-web-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
     "babel": "babel ./src/js -d ./public/js -w",
-    "gulp": "gulp watch",
-    "sass": "gulp",
     "bs": "browser-sync start --config bs-config.js",
-    "server": "node server",
-    "start": "npm run sass & npm run babel & npm run bs & npm run server"
+    "serve": "yarn build & yarn babel & yarn bs",
+    "lint": "eslint --ext .js src --fix"
   },
-  "keywords": [],
   "babel": {
-    "presets": "es2015"
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
-  "author": "",
-  "license": "ISC",
+  "license": "pbu",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.2.1",
+    "babel-preset-latest": "^6.24.1",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.18.13",
+    "browserify": "^16.2.3",
+    "css-declaration-sorter": "^4.0.1",
+    "css-mqpacker": "^7.0.0",
     "ejs-cli": "^2.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "gulp": "^3.9.1",
     "gulp-ejs": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "node-sass": "^4.6.1"
+    "node-sass": "^4.6.1",
+    "vinyl-source-stream": "^2.0.0"
   },
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+  "dependencies": {}
 }

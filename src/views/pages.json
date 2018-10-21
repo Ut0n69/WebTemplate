@@ -1,0 +1,13 @@
+{
+  "pages": [{
+      "name": "index",
+      "title": "Top",
+      "description": "I am Top from ejs."
+    },
+    {
+      "name": "pageA",
+      "title": "PageA",
+      "description": "I am PageA from ejs."
+    }
+  ]
+}
